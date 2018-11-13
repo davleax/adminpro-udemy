@@ -9,6 +9,8 @@ import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+//import { IncrementadorComponent } from './components/incrementador/incrementador.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,13 +19,15 @@ import { RegisterComponent } from './login/register.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+   // IncrementadorComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
